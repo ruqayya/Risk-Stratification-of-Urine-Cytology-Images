@@ -4,7 +4,8 @@
 </p>
 
 <p>This repository contains code for predicting different types of cell in urine cytology images. The list of classes are:</p>
-<p style="color:red"> Normal urothelial cells</p>
+<b style='color:red'>Normal urothelial cells</b>.
+
 Squamous cells
 Inflammatory
 Others
