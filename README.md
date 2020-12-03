@@ -10,8 +10,12 @@
   <img src="https://github.com/ruqayya/Risk-Stratification-of-Urine-Cytology-Images/blob/main/etc/system_flow.jpg" width="700" title="SystemFlowDiagram">
 </p>
 
-<p>The current version of code works with jp2 whole slide images of urine cytology samples. A sample jp2 image will be downloaded if there are no images available for processing. The trained network checkpoint which was used to generate results for this study are also provided with the code. 
-  </p>
+<p>The current version of code works with jp2 whole slide images of urine cytology samples. A sample jp2 image will be downloaded if there are no images available for processing. A trained network checkpoint which was used to generate results for this study is also provided with the code. 
+</p>
+
+<p>
+The journal paper on this work is currently under review in Cytometry Part A.
+</p>
  
 
 
