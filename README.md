@@ -7,3 +7,6 @@ This repository contains code for predicting different types of cell in urine cy
 5. Atypical urothelial cells
 6. Malignant urothelial cells
 7. Debris
+
+
+![Alt text](/ruqayya/Risk-Stratification-of-Urine-Cytology-Images/blob/main/etc/cell_overlay.png?raw=true "Title")
