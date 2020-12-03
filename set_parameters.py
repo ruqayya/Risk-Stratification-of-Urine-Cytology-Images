@@ -1,4 +1,5 @@
 import os
+import urllib.request
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 # dataset details
@@ -13,7 +14,12 @@ learning_rate = 1e-05
 # Setting paths
 current_dir = os.path.dirname(__file__)
 checkpoint_dir = os.path.join(current_dir, 'checkpoints', 'model_weights-0.83-328.hdf5')
+url = 'https://warwick.ac.uk/fac/sci/dcs/research/tia/software/urinecyto/model_weights-0.83-328.hdf5'
+if not os.path.isfile(checkpoint_dir):
+    urllib.request.urlretrieve(url, os.path.join(current_dir, 'checkpoints', 'model_weights-0.83-328.hdf5'))
 
 wsi_dir = os.path.join(current_dir, 'WSIs')
 output_path = os.path.join(current_dir, 'output')
 os.makedirs(output_path, exist_ok=True)
+
+

@@ -20,16 +20,20 @@ import matplotlib.patches as patches
 
 import set_parameters as param
 from networkClass import networkClass
+import urllib.request
 
 class WSI_Processor:
     def __init__(self):
         self.wsi_dir = param.wsi_dir
         self.all_wsi_path = glob.glob(self.wsi_dir + "/*.jp2")
+        if self.all_wsi_path == []:
+            url = 'https://warwick.ac.uk/fac/sci/dcs/research/tia/software/urinecyto/ucyto.jp2'
+            urllib.request.urlretrieve(url, os.path.join(self.wsi_dir, 'ucyto.jp2'))
+
         if self.all_wsi_path != []:
             try:
                 self.matlabObj = engine.start_matlab()
                 self.matlabObj.cd(os.path.join(os.getcwd(), 'matlab'), nargout=0)
-                # self.matlabObj.cd(os.path.join(os.path.normpath(os.getcwd() + os.sep + os.pardir), 'matlab'), nargout=0)
             except:
                 print("Matlab Engine not started...")
         else:
