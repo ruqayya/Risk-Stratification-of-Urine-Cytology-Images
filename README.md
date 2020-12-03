@@ -8,6 +8,8 @@
 
 <p align="center">
   <img src="https://github.com/ruqayya/Risk-Stratification-of-Urine-Cytology-Images/blob/main/etc/system_flow.jpg" width="700" title="SystemFlowDiagram">
+</p align="center">
+<p style="font-size:11px">(a) ROI detection (b) patches of size 5000 x 5000 are extracted from ROI c) unit which process every patch and output the coordinates and predicted label of each candidate cell (c1) cell segmentation followed by connected component analysis (c2) patch extraction (c3) label prediction using a trained classiier.
 </p>
 
 <p>The current version of code works with jp2 whole slide images of urine cytology samples. A sample jp2 image will be downloaded if there are no images available for processing. A trained network checkpoint which was used to generate results for this study is also provided with the code. 
