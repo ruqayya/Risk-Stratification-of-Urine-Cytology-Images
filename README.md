@@ -16,7 +16,9 @@
 </p>
 
 <p>
-The journal paper on this work is currently under review in Cytometry Part A.
+This work is published in Cytometry Part A, https://onlinelibrary.wiley.com/doi/10.1002/cyto.a.24313.
+
+Awan, R., Benes, K., Azam, A., Song, T.H., Shaban, M., Verrill, C., Tsang, Y.W., Snead, D., Minhas, F. and Rajpoot, N., 2021. Deep learning based digital cell profiles for risk stratification of urine cytology images. Cytometry Part A, 99(7), pp.732-742.
 </p>
  
 
